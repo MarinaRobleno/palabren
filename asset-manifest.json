@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/palabren/static/css/main.e2b69bd4.css",
-    "main.js": "/palabren/static/js/main.3a0b39ae.js",
+    "main.js": "/palabren/static/js/main.9ca06c78.js",
     "static/js/787.e01666d6.chunk.js": "/palabren/static/js/787.e01666d6.chunk.js",
     "static/media/logo.svg": "/palabren/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/palabren/index.html",
     "main.e2b69bd4.css.map": "/palabren/static/css/main.e2b69bd4.css.map",
-    "main.3a0b39ae.js.map": "/palabren/static/js/main.3a0b39ae.js.map",
+    "main.9ca06c78.js.map": "/palabren/static/js/main.9ca06c78.js.map",
     "787.e01666d6.chunk.js.map": "/palabren/static/js/787.e01666d6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e2b69bd4.css",
-    "static/js/main.3a0b39ae.js"
+    "static/js/main.9ca06c78.js"
   ]
 }
