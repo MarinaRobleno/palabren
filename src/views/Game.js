@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { BigContainer } from "../components/BigContainer";
 import { Input } from "../components/Input";
+import { PlayAgain } from "../components/PlayAgain";
 
 export function Game() {
   const [submittedWord, setSubmittedWord] = useState(null);
-  const [correctWord, setCorrectWord] = useState("amigo");
+  const [correctWord, setCorrectWord] = useState("verga");
   const [solved, setSolved] = useState(false);
   return (
     <>
@@ -16,6 +17,7 @@ export function Game() {
         correctWord={correctWord}
         setSolved={setSolved}
       />
+      {solved ? <PlayAgain /> : null}
     </>
   );
 }
