@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { BigContainer } from "../components/BigContainer";
 import { Input } from "../components/Input";
 import { PlayAgain } from "../components/PlayAgain";
+import { words } from "../data/sorted";
 
 export function Game() {
   const [submittedWord, setSubmittedWord] = useState(null);
   const [correctWord, setCorrectWord] = useState("");
   const [solved, setSolved] = useState(false);
-  const arrayPalabras = ["amigo", "comer", "puedo"];
+  const arrayPalabras = words;
 
   useEffect(() => {
     setCorrectWord(
