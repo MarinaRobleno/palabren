@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Square } from "./Square";
 
-export function Line({ word, correctWord }) {
+export function Line({ word, correctWord, setSolved }) {
   const [correctLetters, setCorrectLetters] = useState(
     correctWord.toUpperCase().split("")
   );
+  useEffect(() => {
+    if (word === correctWord) {
+      setSolved(true);
+    }
+  }, [word]);
   return (
     <div
       style={{

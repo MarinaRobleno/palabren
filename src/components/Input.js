@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export function Input({ setSubmittedWord }) {
+export function Input({ setSubmittedWord, solved }) {
   const [formWord, setFormWord] = useState(null);
   const mainForm = document.getElementById("main-form");
   const handleSubmitWord = (e) => {
@@ -14,8 +14,14 @@ export function Input({ setSubmittedWord }) {
     }
   };
   return (
-    <form id="main-form" onSubmit={handleSubmitWord}>
-      <input type="text" onChange={(e) => setFormWord(e.target.value)} />
-    </form>
+    <>
+      {solved ? (
+        <h2>You Solved It!</h2>
+      ) : (
+        <form id="main-form" onSubmit={handleSubmitWord}>
+          <input type="text" onChange={(e) => setFormWord(e.target.value)} />
+        </form>
+      )}
+    </>
   );
 }
