@@ -31,7 +31,6 @@ export function Game() {
   return (
     <>
       <h1 style={{ color: "white" }}>PALABREN</h1>
-      <h2 style={{ color: "white" }}>{correctWord}</h2>
       <Input
         setSubmittedWord={setSubmittedWord}
         solved={solved}
