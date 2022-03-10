@@ -16,9 +16,9 @@ export function Input({ setSubmittedWord, solved, attemptCounter }) {
   return (
     <>
       {solved ? (
-        <h2>You Solved It!</h2>
+        <h2 style={{ color: "white" }}>You Solved It!</h2>
       ) : attemptCounter === 6 ? (
-        <h2>You lost!</h2>
+        <h2 style={{ color: "white" }}>You lost!</h2>
       ) : (
         <form id="main-form" onSubmit={handleSubmitWord}>
           <input type="text" onChange={(e) => setFormWord(e.target.value)} />

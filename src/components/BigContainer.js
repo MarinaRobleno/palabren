@@ -17,7 +17,7 @@ export function BigContainer({
 
   return (
     <Paper
-      sx={{ width: "300px", height: "300px", margin: "20px", padding: "10px" }}
+      sx={{ width: "300px", height: "300px", margin: "20px", padding: "10px", backgroundColor: "#51565E" }}
     >
       {submittedWords.map((word) => (
         <>
