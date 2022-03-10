@@ -5,7 +5,7 @@ export function Square({ letter, correctLetters, index }) {
     if (letter == correct) {
       return "green";
     } else if (letter != correct && correctLetters.includes(letter)) {
-      return "yellow";
+      return "#FAC033";
     } else {
       return "grey";
     }
@@ -21,6 +21,7 @@ export function Square({ letter, correctLetters, index }) {
         ),
         width: "40px",
         height: "40px",
+        color: "white",
       }}
     >
       {letter.toUpperCase()}
